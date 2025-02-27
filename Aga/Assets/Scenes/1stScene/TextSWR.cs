@@ -14,6 +14,9 @@ public class TextSWR : MonoBehaviour
     public TMP_Text textB1;
     public TMP_Text textB2;
     public TMP_Text textB3;
+    public Button button1;
+    public Button button2;
+    public Button button3;
     // Start is called before the first frame update
     void Start()
     {
@@ -38,7 +41,17 @@ public class TextSWR : MonoBehaviour
     {
         text.text = txts[0];
         textB1.text = txts[1];
-        textB2.text = txts[2];
-        textB3.text = txts[3];
+        if (txts.Length == 3)
+        {
+            textB2.text = txts[2];
+            button2.gameObject.SetActive(true);
+        }
+        else button2.gameObject.SetActive(false);
+        if (txts.Length == 3)
+        {
+            textB3.text = txts[3];
+            button3.gameObject.SetActive(true);
+        }
+        else button3.gameObject.SetActive(false);
     }
 }

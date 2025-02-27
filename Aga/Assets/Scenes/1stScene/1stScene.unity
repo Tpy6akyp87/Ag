@@ -1343,16 +1343,16 @@ MonoBehaviour:
   - 20
   - 21
   - 22
-  - 23
   dialogText3:
   - 30
   - 31
-  - 32
-  - 33
   text: {fileID: 2111497361}
   textB1: {fileID: 1779859768}
   textB2: {fileID: 1142430469}
   textB3: {fileID: 1225920820}
+  button1: {fileID: 2040408254}
+  button2: {fileID: 861183473}
+  button3: {fileID: 396400489}
 --- !u!4 &2042528049
 Transform:
   m_ObjectHideFlags: 0
